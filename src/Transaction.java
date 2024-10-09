@@ -37,12 +37,12 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "date=" + date +
-                ", type=" + type +
-                ", amount=" + amount +
-                ", balance=" + balance +
-                ", description='" + description + '\'' +
+        return "Транзакции{" +
+                "дата=" + date +
+                ", тип=" + type +
+                ", сумма=" + amount +
+                ", баланс=" + balance +
+                ", описание='" + description + '\'' +
                 '}';
     }
 }

@@ -16,20 +16,20 @@ public class newAccount extends Account {
     @Override
     public void withdraw(double amount) {
         super.withdraw(amount);
-        transactions.add(new Transaction('W', amount, getBalance(), "Withdrawal"));
+        transactions.add(new Transaction('W', amount, getBalance(), "Снятие"));
     }
 
     @Override
     public void deposit(double amount) {
         super.deposit(amount);
-        transactions.add(new Transaction('D', amount, getBalance(), "Deposit"));
+        transactions.add(new Transaction('D', amount, getBalance(), "Пополнение"));
     }
 
     public void displayAccountSummary() {
-        System.out.println("Account Summary for " + name);
-        System.out.println("Annual Interest Rate: " + getAnnualInterestRate() + "%");
-        System.out.println("Balance: " + getBalance() + " руб.");
-        System.out.println("Transactions:");
+        System.out.println("Информация по счету для " + name);
+        System.out.println("Годовая процентная ставка: " + getAnnualInterestRate() + "%");
+        System.out.println("Баланс: " + getBalance() + " руб.");
+        System.out.println("Транзакции:");
         for (Transaction transaction : transactions) {
             System.out.println(transaction);
         }
